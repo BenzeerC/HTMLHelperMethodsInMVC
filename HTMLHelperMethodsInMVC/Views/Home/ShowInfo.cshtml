@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewData["Title"] = "ShowInfo";
+}
+<h1>User Information</h1>
+<p>
+    User Name:@ViewBag.UserName;
+</p>
+
+<p>
+    Gender:@ViewBag.Gender;
+</p>
+<p>
+    Hobbies:
+    @foreach (string item in @ViewBag.Hobbies)
+    {
+        <span>item</span>
+
+        <br />
+    }
+
+</p>
+<p>
+    User City:@ViewBag.City;
+</p>
+
+<p>
+    Your Comments:@ViewBag.Comments;
+</p>
+
+
